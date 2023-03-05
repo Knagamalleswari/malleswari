@@ -1,0 +1,33 @@
+<p>ENTER YOUR DETAILS</p>
+<!-- <ul> 
+    <li *ngFor="let malli of listOfusers">
+   {{malli}} is present
+    </li>
+</ul>  -->
+<!-- <p *ngFor="let malli of listOfusers">
+    {{malli}}
+    <span>is good person</span>
+</p>  -->
+<form (submit)="adduser()">
+    <label for="username">
+        ENTER USER NAME :
+</label>
+<input type="text" name="username"id="username"[(ngModel)]="newuser">
+<br><br>
+<label for="password"></label>
+<label for="username">
+   ENTER PASSWORD :
+</label>
+<input type="password" name="password" id="password" [(ngModel)]="password">
+<!-- <button type="submit">ADD</button> -->
+</form>
+  <ul>
+    <li *ngFor="let malli of listOfusers">
+   {{newuser}} is present
+    </li>
+     </ul> 
+     <p *ngFor="let malli of listOfusers">
+        {{malli}}
+        <span>is good person</span>
+    </p>  
+    <button type="submit">ADD</button>

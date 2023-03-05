@@ -7,8 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'malleswari';
-};
- 
+ showUserlist:boolean = false;
+ displayuserslist(){
+  this.showUserlist = true;
+ }
+ }
+
 // hello() {
 //   this.title = this.title.concat("shopping website");
 // }
